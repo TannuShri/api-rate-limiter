@@ -1,8 +1,8 @@
 import express from "express";
 import apiKeyAuth from "../middleware/apiKeyAuth.js";
-import rateLimiter from "../middleware/endPointRateLimiter.js";
+import rateLimiter from "../middleware/rateLimiter.js";
 import usageLogger from "../middleware/usageLogger.js";
-import endPointRateLimiter from "../middleware/rateLimiter.js";
+import endPointRateLimiter from "../middleware/endPointRateLimiter.js";
 import redisCache from "../middleware/redisCache.js";
 const router=express.Router();
 
